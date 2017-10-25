@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/xindongli.css">
+    <link rel="stylesheet" href="./css/cssreset-min.css">
+</head>
+<script src="./js/jquery-3.2.1.js"></script>
+<script>
+    $(function() {
+        var count = 0;
+        $('.n_left').on('click', function() {
+            count++;
+            if (count % 2 != 0) {
+                $('#mark_2').attr('style', 'transform:rotate(180deg)');
+                $('.show1').slideDown();
+            } else {
+                $('#mark_2').attr('style', 'transform:rotate(0deg)');
+                $('.show1').slideUp();
+            }
+        });
+
+    })
+</script>
+
+<body>
+    <div class="header w">
+        <div class="nav">
+            <img src="./img/logo.png" alt="">
+            <ul>
+                <li class="n_s"><a href="javascript:;">预约试驾</a></li>
+                <li class="n_s"><a href="javascript:;">经销商查询及招募</a></li>
+                <li><a href="javascript:;">新闻中心</a></li>
+                <li><a href="javascript:;">福特文化</a></li>
+                <li><a href="javascript:;">福特科技</a></li>
+                <li><a href="javascript:;">车主服务</a></li>
+                <li><a href="javascript:;">购车专区</a></li>
+                <li><a href="javascript:;">车型展示</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="h_nav w">
+        <div class="n_left">
+            <img src="./img/mark_2.png" alt="" id="mark_2">
+            <a href="#">EcoBoost芯动力玩咖</a>
+        </div>
+        <div class="n_right">
+            <img src="./img/mark_3.png" alt="">
+            <a href="#">预约试驾</a>
+        </div>
+    </div>
+    <div class="show1">
+        <ul>
+            <li><a href="#">EcoBoost芯动力玩咖</a></li>
+            <li>
+                <a href="#">明星玩咖挑战</a>
+            </li>
+            <li>
+                <a href="#">玩咖谍照实记</a>
+            </li>
+            <li>
+                <a href="#">EcoBoost®澎湃动力</a>
+            </li>
+        </ul>
+    </div>
+    <div class="banner1 w">
+        <img src="./img/index_banner1.jpg" alt="">
+        <div class="b1_text">
+            <p>EcoBoost 芯动力玩咖竞选炫酷开启</p>
+            <p>福特福克斯邀您一起观战</p>
+            <p>新浪粉丝嘉年华门票等你来抢</p>
+        </div>
+        <a href="#">立即参与</a>
+    </div>
+    <div class="banner2 w">
+        <div class="b2_text">
+            <h1>EcoBoost芯动力玩咖</h1>
+            <h2>福特福克斯携手新浪微博亚洲新歌榜和粉丝嘉年华，</h2>
+            <p>邀您一起，与明星互动，释放玩心，嗨翻一夏!</p>
+        </div>
+        <div class="b2_photo">
+            <figure class="figure1">
+                <img src="./img/b2_photo1.jpeg" alt="">
+                <a href="#">围观盛典</a>
+            </figure>
+            <figure class="figure2">
+                <img src="./img/b2_photo2.jpeg" alt="">
+                <a href="#">加入玩咖</a>
+            </figure>
+            <figure class="figure3">
+                <img src="./img/b2_photo3.jpeg" alt="">
+                <a href="#">嗨翻一夏</a>
+            </figure>
+        </div>
+    </div>
+    <div class="banner2 w">
+        <div class="b2_text">
+            <h1>明星玩咖挑战</h1>
+            <h2>袁成杰、丁子玲挑战三大任务，</h2>
+            <p>谁将成为终极“EcoBoost芯动力玩咖”？</p>
+            <p>想省就省，想嗨就嗨！明星对决，拭目以待！</p>
+        </div>
+        <div class="b2_photo">
+            <figure class="figure1">
+                <vedio>
+                    <img src="./img/b2_photo4.jpeg" alt="" width="375" height="324">
+                </vedio>
+                <p>极速操控尖叫化妆，</p>
+                <p>且看粉丝妆后爆笑变身</p>
+            </figure>
+            <figure class="figure2">
+                <img src="./img/b2_photo5.jpeg" alt="" width="375" height="324">
+                <p>比拼接单赚车费，</p>
+                <p>粉丝乘客惊讶连连</p>
+            </figure>
+            <figure class="figure3">
+                <img src="./img/b2_photo6.jpeg" alt="" width="375" height="324">
+                <p>车手炫技狂飙上演极速激情，</p>
+                <p>挑战千方百计护水缸</p>
+            </figure>
+        </div>
+    </div>
+    <div class="banner3 w">
+        <div class="b3_text">
+            <h1>玩咖谍照纪实</h1>
+            <h2>探秘明星玩咖挑战幕后故事，记录速度与激情的真实瞬间。</h2>
+        </div>
+        <div class="photoshow">
+            <ul class="Ul1">
+                <li>
+                    <a href=""><img src="./img/b2_photo7.jpeg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/b2_photo8.jpeg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/b2_photo9.jpeg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/b2_photo10.jpeg" alt=""></a>
+                </li>
+            </ul>
+            <ul class="Ul2">
+                <li>
+                    <a href="#"><img src="./img/b2_photo11.jpeg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/b2_photo12.jpeg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/b2_photo13.jpeg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner4 w">
+        <div class="b4_text">
+            <h1>EcoBoost®澎湃动力</h1>
+            <h2>EcoBoost®发动机拥有澎湃动力和燃油经济性，驾享更带劲！</h2>
+        </div>
+        <img src="./img/b2_photo14.jpg" alt="">
+        <a href="#">预约试驾</a>
+    </div>
+    <div class="footer w">
+        <div class="links">
+            <dl>
+                <dt><a href="">车型展示</a></dt>
+                <dd><a href="">轿车</a></dd>
+                <dd><a href="">SUV</a></dd>
+                <dd><a href="">MPV</a></dd>
+                <dd><a href="">性能车</a></dd>
+                <dd><a href="">商务车</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">购车专区</a></dt>
+                <dd><a href="">福特金融</a></dd>
+                <dd><a href="">活动专区</a></dd>
+                <dd><a href="">批售业务</a></dd>
+                <dd><a href="">二手车</a></dd>
+                <dd><a href="">定制车辆</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">客户服务</a></dt>
+                <dd><a href="">长安福特客户服务</a></dd>
+                <dd><a href="">福特中国客户服务</a></dd>
+                <dd><a href="">江铃汽车客户服务</a></dd>
+                <dd><a href="">用车指南</a></dd>
+                <dd><a href="">SYNC支持</a></dd>
+                <dd><a href="">联系我们</a></dd>
+                <dd><a href="">长安福特车主俱乐部</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特科技</a></dt>
+                <dd><a href="">智能科技</a></dd>
+                <dd><a href="">EcoBoost</a></dd>
+                <dd><a href="">SYNC®</a></dd>
+                <dd><a href="">福特派</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特文化</a></dt>
+                <dd><a href="">新闻中心</a></dd>
+                <dd><a href="">诚聘英才</a></dd>
+                <dd><a href="">关于福特</a></dd>
+                <dd><a href="">品牌体验</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="ff w">
+        <ul>
+            <li>©2016福特汽车（中国）有限公司 沪ICP备05031283号</li>
+            <li><a class="  " href="https://www.ford.com.cn/privacy/">隐私权保护声明</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/copyright/">版权保护</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/sitemap/">网站地图</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/contact-us/">联系我们</a></li>
+            <li><a class="  " href="http://corporate.ford.com/homepage.html">福特全球</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/hotline/">24小时客服热线</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

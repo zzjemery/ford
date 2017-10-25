@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+}
+.w{
+    width: 1349px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.header{
+    .w;
+    img{
+        .fl;
+        padding-left: 50px;
+    }
+    ul{
+        .fr;
+        padding-right: 30px;
+        li{
+            .fr;
+            margin: 10px;
+            line-height: 45px;
+            font-weight: bold;
+            a{
+                display: block;
+                height: 50px;
+                color: #008CBA;
+                &:hover{
+                    color:#1B394E;
+                }
+
+            }            
+        }
+        .n_s{
+            font-weight: normal;
+        }
+    }
+}
+.h_nav{
+    background-color: #2D96CD;
+    cursor: pointer;
+    position: sticky;
+    top:0;
+    z-index: 3;
+    .n_left{
+        .fl;
+        width: 350px;
+        background-color: #1B394E;
+        img{
+            .fl;
+            padding:20px 30px;
+        }
+        a{
+            .fl;
+            padding-top: 30px;
+        }
+    }
+    .n_right{
+        .fr;
+        width: 450px;
+        margin-right: 100px;
+        img{
+            .fl;
+            padding-top: 28px;
+            margin-left: 30px;
+        }
+        a{
+            .fl;
+            padding-top: 24px;
+            margin-left: 13px;
+        }
+    }    
+}
+.slider{
+    text-align: center;
+    position: relative;
+    .w;
+    height: 722px;
+    .huodong{
+        margin: 30px;
+        line-height: 100px;
+        font-size: 50px;
+        color:#1B3974;
+    }
+    .banner{
+        position:absolute;
+        width:1349*2px;
+        img{
+            width: 1349px;
+            // float: left;
+        }
+        p{
+            display: block;
+            .fl;
+            position: relative;
+            // overflow: hidden;
+            s{
+                position: absolute;
+                top: 300px;
+                left: 30px;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 24px;
+                color:#fff;
+                display: block;
+                height: 50px;
+                width: 200px;
+                background-color: #2D96CD;
+                line-height: 50px;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    background-color: #fff;
+                    color:#2D96CD;
+                }
+            }
+        }
+        // &:hover+.banner_left{           
+        //         width: 50px;            
+        // } 
+        // &:hover+.banner_right{           
+        //     width: 50px;            
+        // } 
+    }
+    .banner_left,.banner_right{
+        position: absolute;
+        right:0px;  
+        top: 240px; 
+        width: 0px;
+        height: 50px;
+        line-height: 40px;
+        text-align: center;
+        // font-weight: bold;
+        font-size: 30px;
+        // transition: all 1s ease-in-out;
+        background-color: #2D96CD;
+        color:#fff;
+        cursor: pointer;
+        &:hover{
+            background-color: #fff;
+            color:#2D96CD;
+            
+        }
+    }   
+    .banner_right{
+        top: 290px;
+        background-color: #000;
+        opacity: 0.7;
+    }
+}
+.footer{
+    margin-top: 60px;
+    border-top: 70px solid #343434;
+    border-bottom: 30px solid #1B394E; 
+    background-color: #000;    
+    .links{
+        padding: 20px;
+        .fl;
+        dl{
+            .fl;
+            margin: 20px 80px;
+            font-size: 12px;
+            a{
+                color:#9F9F9F;
+            }
+            dt{
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 10px;
+                a{
+                    color:#DFDFDF;
+                }
+            }
+            dd{
+                margin: 10px 0;
+            }
+        }
+    }
+}
+.ff{
+    margin: 20px 0;
+    ul{
+        .fl;
+        padding-left: 20px;
+        li{
+            .fl;
+            margin: 10px;  
+            font-size: 12px;
+            a{
+                color:#979797;                
+            }
+        }
+    }
+}

@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+}
+.w {
+  width: 1349px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.header {
+  width: 1349px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.header img {
+  float: left;
+  padding-left: 50px;
+}
+.header ul {
+  float: right;
+  padding-right: 30px;
+}
+.header ul li {
+  float: right;
+  margin: 10px;
+  line-height: 45px;
+  font-weight: bold;
+}
+.header ul li a {
+  display: block;
+  height: 50px;
+  color: #008CBA;
+}
+.header ul li a:hover {
+  color: #1B394E;
+}
+.header ul .n_s {
+  font-weight: normal;
+}
+.content .c_title {
+  width: 1349px;
+  float: left;
+  z-index: 999;
+  height: 70px;
+  background-color: #2D96CD;
+}
+.content .c_title .c_left {
+  float: left;
+  height: 70px;
+  width: 366px;
+  background-color: #1B394E;
+  text-align: center;
+  line-height: 70px;
+  position: relative;
+}
+.content .c_title .c_left img {
+  position: absolute;
+  top: 17px;
+  left: 60px;
+}
+.content .c_title .c_right {
+  overflow: hidden;
+  margin-top: 24px;
+  margin-left: 830px;
+}
+.content .c_title .c_right a {
+  margin: 0 30px;
+}
+.content .banner {
+  position: relative;
+  float: left;
+}
+.content .banner img {
+  width: 100%;
+  max-width: inherit;
+}
+.content .banner .chaxun {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 400px;
+  height: 60px;
+  background-color: #1B394E;
+  line-height: 60px;
+  cursor: pointer;
+}
+.content .banner .chaxun span {
+  color: #fff;
+  font-size: 18px;
+  padding-left: 30px;
+}
+.content .banner .chaxun img {
+  margin-left: 230px;
+  width: 20px;
+}
+.content .banner .chaxun .show1 {
+  cursor: default;
+  overflow: hidden;
+  background-color: #fff;
+}
+.content .banner .chaxun .show1 #inp1,
+.content .banner .chaxun .show1 #inp2,
+.content .banner .chaxun .show1 #inp3 {
+  color: #1B394E;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.content .banner .chaxun .show1 #inp1 input,
+.content .banner .chaxun .show1 #inp2 input,
+.content .banner .chaxun .show1 #inp3 input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.content .banner .chaxun .show1 .inp1 select,
+.content .banner .chaxun .show1 .inp2 select,
+.content .banner .chaxun .show1 .inp3 select {
+  display: block;
+  margin-left: 20px;
+  height: 50px;
+  width: 350px;
+  margin-bottom: 20px;
+  text-indent: 1em;
+}
+.content .banner .chaxun .show1 .inp1 .text,
+.content .banner .chaxun .show1 .inp2 .text,
+.content .banner .chaxun .show1 .inp3 .text {
+  margin-left: 20px;
+  height: 50px;
+  width: 350px;
+  text-indent: 1em;
+}
+.content .banner .chaxun .show1 .c_chaxun {
+  text-align: center;
+  height: 50px;
+  width: 350px;
+  background-color: #2D96CD;
+  color: #fff;
+  font-size: 14px;
+  margin: 20px;
+  cursor: pointer;
+}
+.down {
+  position: relative;
+  background-image: url(../img/index_banner5.jpg);
+  height: 436px;
+  margin-top: -4px;
+}
+.down .down_text {
+  position: absolute;
+  right: 200px;
+  top: 100px;
+  width: 500px;
+  color: #fff;
+}
+.down .down_text h1 {
+  font-size: 50px;
+}
+.down .down_text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.down .down_text a {
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  background-color: #2D96CD;
+}
+.down .down_text a:hover {
+  background-color: #fff;
+  color: #2D96CD;
+}
+.footer {
+  margin-top: 60px;
+  border-top: 70px solid #343434;
+  border-bottom: 30px solid #1B394E;
+  background-color: #000;
+}
+.footer .links {
+  padding: 20px;
+  float: left;
+}
+.footer .links dl {
+  float: left;
+  margin: 20px 80px;
+  font-size: 12px;
+}
+.footer .links dl a {
+  color: #9F9F9F;
+}
+.footer .links dl dt {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.footer .links dl dt a {
+  color: #DFDFDF;
+}
+.footer .links dl dd {
+  margin: 10px 0;
+}
+.ff {
+  margin: 20px 0;
+}
+.ff ul {
+  float: left;
+  padding-left: 20px;
+}
+.ff ul li {
+  float: left;
+  margin: 10px;
+  font-size: 12px;
+}
+.ff ul li a {
+  color: #979797;
+}

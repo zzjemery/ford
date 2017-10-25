@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cssreset-min.css">
+    <link rel="stylesheet" href="./css/jingxiaoshang.css">
+
+</head>
+<script src="./js/jquery-3.2.1.js"></script>
+<script>
+    $(function() {
+        var count = 0;
+        var Cipn1_1 = 0;
+        var Cipn1_2 = 0;
+        var Cipn1_3 = 0;
+        var sticky = document.querySelector('.c_title');
+        var origOffsetY = sticky.offsetTop;
+
+        function onScroll(e) {
+            window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
+                sticky.classList.remove('fixed');
+        }
+
+        document.addEventListener('scroll', onScroll);
+        $('.c_left').on('click', function() {
+            count++;
+            if (count % 2 != 0) $('#mark_2').attr('style', 'transform:rotate(180deg)');
+            else $('#mark_2').attr('style', 'transform:rotate(0deg)');
+        });
+        $('.control').on('click', function() {
+            count++;
+            if (count % 2 != 0) {
+                $('#mark_4').attr('style', 'transform:rotate(180deg)');
+                $('.show1').slideUp();
+            } else {
+                $('#mark_4').attr('style', 'transform:rotate(0deg)');
+                $('.show1').slideDown();
+            }
+        });
+        $('#ipn1_1').on('click', function() {
+            Cipn1_1++;
+            if (Cipn1_1 % 2 != 0) {
+                $('.inp1').slideUp();
+            } else {
+                $('.inp1').slideDown();
+            }
+        });
+        $('#ipn1_2').on('click', function() {
+            Cipn1_2++;
+            if (Cipn1_2 % 2 != 0) {
+                $('.inp2').slideUp();
+            } else {
+                $('.inp2').slideDown();
+            }
+        });
+        $('#ipn1_3').on('click', function() {
+            Cipn1_3++;
+            if (Cipn1_3 % 2 != 0) {
+                $('.inp3').slideUp();
+            } else {
+                $('.inp3').slideDown();
+            }
+        });
+    });
+</script>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <img src="./img/logo.png" alt="">
+            <ul>
+                <li class="n_s"><a href="javascript:;">预约试驾</a></li>
+                <li class="n_s"><a href="javascript:;">经销商查询及招募</a></li>
+                <li><a href="javascript:;">新闻中心</a></li>
+                <li><a href="javascript:;">福特文化</a></li>
+                <li><a href="javascript:;">福特科技</a></li>
+                <li><a href="javascript:;">车主服务</a></li>
+                <li><a href="javascript:;">购车专区</a></li>
+                <li><a href="javascript:;">车型展示</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="father">
+            <div class="c_title">
+                <a href="#" class="c_left"><img src="./img/mark_2.png" alt="" id="mark_2">经销商查询及招募</a>
+                <div class="c_right">
+                    <a href="#"><img src="./img/mark_3.png" alt="">长安福特经销商招募</a>
+                    <a href="#"><img src="./img/mark_3.png" alt="">江铃汽车福特品牌经销商</a>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="./img/page2_banner.jpg" alt="">
+            <div class="chaxun">
+                <div class="control">
+                    <span>经销商查询</span>
+                    <img src="./img/mark_4.png" alt="" id="mark_4">
+                </div>
+                <div class="show1">
+                    <div id="inp1">
+                        <input type="checkbox" checked="checked" id="ipn1_1">您的位置
+                    </div>
+                    <div class="inp1">
+                        <select name="" id="">
+                            <option value="选择一个省市*">选择一个省市*</option>
+                            <option value="北京">北京</option>
+                            <option value="上海">上海</option>
+                            <option value="广东">广东</option>
+                            <option value="江西">江西</option>
+                            <option value="浙江">浙江</option>
+                            <option value="福建">福建</option>
+                            <option value="广西">广西</option>
+                            <option value="湖南">湖南</option>
+                            <option value="湖北">湖北</option>
+                            <option value="河南">河南</option>
+                            <option value="河北">河北</option>
+                        </select>
+                        <select name="" id="" disabled="disabled">
+                            <option value="选择一个城市">选择一个城市</option>
+                        </select>
+                    </div>
+                    <div id="inp2">
+                        <input type="checkbox" checked="checked" id="ipn1_2">选择车型
+                    </div>
+                    <div class="inp2">
+                        <select name="" id="">
+                            <option value="选择一款车型">选择一款车型</option>
+                            <option value="全新福特福克斯">全新福特福克斯</option>
+                            <option value="福特福睿斯">福特福睿斯</option>
+                            <option value="福特金牛座">福特金牛座</option>
+                            <option value="福特翼博">福特翼博</option>
+                            <option value="福特翼虎">福特翼虎</option>
+                            <option value="福特锐界">福特锐界</option>
+                        </select>
+                    </div>
+                    <div id="inp3">
+                        <input type="checkbox" checked="checked" id="ipn1_3">经销商名称
+                    </div>
+                    <div class="inp3">
+                        <input type="text" name="" class="text" placeholder="请输入经销商名字">
+                    </div>
+                    <div class="c_chaxun">
+                        <p>搜索经销商</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="down w">
+        <div class="down_text">
+            <h1>福特派</h1>
+            <h2>智能随行 自在随心</h2>
+            <p>通过一站式出行应用工具福特派，您将更便捷地驾驭福特。轻松实现爱车售后服务，获得车主道路救援等各种尽善尽美的解决方案，让每一次出行倍感轻松愉悦。</p>
+            <a href="#">下载福特派</a>
+        </div>
+    </div>
+    <div class="footer w">
+        <div class="links">
+            <dl>
+                <dt><a href="">车型展示</a></dt>
+                <dd><a href="">轿车</a></dd>
+                <dd><a href="">SUV</a></dd>
+                <dd><a href="">MPV</a></dd>
+                <dd><a href="">性能车</a></dd>
+                <dd><a href="">商务车</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">购车专区</a></dt>
+                <dd><a href="">福特金融</a></dd>
+                <dd><a href="">活动专区</a></dd>
+                <dd><a href="">批售业务</a></dd>
+                <dd><a href="">二手车</a></dd>
+                <dd><a href="">定制车辆</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">客户服务</a></dt>
+                <dd><a href="">长安福特客户服务</a></dd>
+                <dd><a href="">福特中国客户服务</a></dd>
+                <dd><a href="">江铃汽车客户服务</a></dd>
+                <dd><a href="">用车指南</a></dd>
+                <dd><a href="">SYNC支持</a></dd>
+                <dd><a href="">联系我们</a></dd>
+                <dd><a href="">长安福特车主俱乐部</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特科技</a></dt>
+                <dd><a href="">智能科技</a></dd>
+                <dd><a href="">EcoBoost</a></dd>
+                <dd><a href="">SYNC®</a></dd>
+                <dd><a href="">福特派</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特文化</a></dt>
+                <dd><a href="">新闻中心</a></dd>
+                <dd><a href="">诚聘英才</a></dd>
+                <dd><a href="">关于福特</a></dd>
+                <dd><a href="">品牌体验</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="ff w">
+        <ul>
+            <li>©2016福特汽车（中国）有限公司 沪ICP备05031283号</li>
+            <li><a class="  " href="https://www.ford.com.cn/privacy/">隐私权保护声明</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/copyright/">版权保护</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/sitemap/">网站地图</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/contact-us/">联系我们</a></li>
+            <li><a class="  " href="http://corporate.ford.com/homepage.html">福特全球</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/hotline/">24小时客服热线</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

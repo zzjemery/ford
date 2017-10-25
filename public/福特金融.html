@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>福特金融</title>
+    <link rel="stylesheet" href="./css/cssreset-min.css">
+    <link rel="stylesheet" href="./css/futejinrong.css">
+</head>
+<script src="./js/jquery-3.2.1.js"></script>
+<script src="./js/superSlider2.js"></script>
+<script>
+    $(function() {
+        var count = 0;
+        var count1 = 0;
+        $('.n_left').on('click', function() {
+            count++;
+            if (count % 2 != 0) {
+                $('#mark_2').attr('style', 'transform:rotate(180deg)');
+                $('.show1').slideDown();
+            } else {
+                $('#mark_2').attr('style', 'transform:rotate(0deg)');
+                $('.show1').slideUp();
+            }
+        });
+        $('.home-hero').hover(function() {
+            $('.arr1,.arr2').animate({
+                'width': '50px'
+            }, 1000);
+        }, function() {
+            $('.arr1,.arr2').animate({
+                'width': '0px'
+            }, 1000);
+        })
+        $('.arr1,.arr2').hover(function() {
+            $('.arr1,.arr2').stop()
+        }, function() {
+            $('.arr1,.arr2').stop()
+        });
+        $('#p1').hover(function() {
+            $('#p1').attr('src', './img/fttxz_5_1.png');
+        }, function() {
+            $('#p1').attr('src', './img/fttxz_5.jpg');
+        });
+        $('#p2').hover(function() {
+            $('#p2').attr('src', './img/fttxz_6_1.jpg');
+        }, function() {
+            $('#p2').attr('src', './img/fttxz_6.jpg');
+        });
+        $('#p3').hover(function() {
+            $('#p3').attr('src', './img/fttxz_7_1.png');
+        }, function() {
+            $('#p3').attr('src', './img/fttxz_7.jpg');
+        });
+        $('.control').on('click', function() {
+            count1++;
+            if (count1 % 2 != 0) {
+                $('#show2').attr('style', 'transform:rotate(180deg)');
+                $('.show2').slideUp();
+            } else {
+                $('#show2').attr('style', 'transform:rotate(0deg)');
+                $('.show2').slideDown();
+            }
+        });
+    })
+</script>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <img src="./img/logo.png" alt="">
+            <ul>
+                <li class="n_s"><a href="javascript:;">预约试驾</a></li>
+                <li class="n_s"><a href="javascript:;">经销商查询及招募</a></li>
+                <li><a href="javascript:;">新闻中心</a></li>
+                <li><a href="javascript:;">福特文化</a></li>
+                <li><a href="javascript:;">福特科技</a></li>
+                <li><a href="javascript:;">车主服务</a></li>
+                <li><a href="javascript:;">购车专区</a></li>
+                <li><a href="javascript:;">车型展示</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="h_nav w">
+        <div class="n_left">
+            <img src="./img/mark_2.png" alt="" id="mark_2">
+            <a href="#">福特金融</a>
+        </div>
+        <div class="n_right">
+            <img src="./img/mark_3.png" alt="">
+            <a href="#">金融产品</a></a>
+            <img src="./img/mark_3.png" alt="">
+            <a href="#">车贷指南</a>
+            <img src="./img/mark_3.png" alt="">
+            <a href="#">车贷计算器</a>
+        </div>
+    </div>
+    <div class="show1">
+        <ul style="max-height: 591px;">
+            <li><a class="  " href="https://www.ford.com.cn/fafc/">福特金融</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/fafc/financial-programs/">金融方案</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/fafc/financial-options/">金融产品</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/fafc/shoppers-guide/">车贷指南</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/fafc/payment-calculator/">车贷计算器 </a></li>
+            <li><a class="  " href="https://www.ford.com.cn/fafc/why-ford-credit/">公司介绍</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/fafc/faq/">常见问题</a></li>
+        </ul>
+    </div>
+    <div class="slider w">
+        <div class="home-hero">
+            <div id="home-hero-slider" style="left:0px;">
+                <a href="#">
+                    <img src="./img/ftjr_1.jpg" width="1349" />
+                    <h2>福特派</h2>
+                    <h3>智能管理 更胜一筹</h3>
+                    <p>下载福特派</p>
+                </a>
+                <a href="#">
+                    <img src="./img/ftjr_2.jpg" width="1349" />
+                    <h2>专享，为您所想</h2>
+                    <p>
+                        查看金融方案
+                    </p>
+                </a>
+                <a href="#">
+                    <img src="./img/ftjr_3.jpg" width="1349" />
+                    <h2>专享，为您所想</h2>
+                    <p>查看车贷指南</p>
+                </a>
+                <a href="#">
+                    <img src="./img/ftjr_4.jpg" width="1349" />
+                    <h2>专享，为您所想</h2>
+                    <p>查看车贷计算器</p>
+                </a>
+            </div>
+            <div class="but1">
+                <span indexs="0" class="on"></span>
+                <span indexs="1"></span>
+                <span indexs="2"></span>
+                <span indexs="3"></span>
+            </div>
+            <span class="arr1" id="pre">&lt;</span>
+            <span class="arr2" id="next">&gt;</span>
+        </div>
+    </div>
+    <div class="floor1 w">
+        <div class="f1_text">
+            <h3>安全轻松地管理您的贷款</h3>
+            <p>有了福特派，财务管理从此更轻松。它能无缝连接您的福特金融账户，为您提供除汽车信贷之外更多灵活的金融产品与服务，充分满足您的各种金融服务需求。</p>
+            <span>下载福特派</span>
+        </div>
+        <img src="./img/ftjr_5.jpg" alt="" style="margin-top:40px;">
+    </div>
+    <div class="floor2 w">
+        <div class="f2_text">
+            <h3>福特金融</h3>
+            <p>值得信赖的汽车金融服务专家</p>
+            <span>点击观看视频</span>
+        </div>
+    </div>
+    <div class="floor3 w">
+        <div class="shower">
+            <ul>
+                <li>
+                    <img src="./img/mark_7.png" alt="">
+                    <p>金融方案</p>
+                    <span>了解小时贷、大学生及公务员购车金融方案，福特金融量身定制、快速便捷。</span>
+                </li>
+                <li>
+                    <img src="./img/mark_8.png" alt="">
+                    <p>金融产品</p>
+                    <span>福特金融致力于提供各种灵活的金融产品与服务，充分满足您的金融服务需求。</span>
+                </li>
+                <li>
+                    <img src="./img/mark_9.png" alt="">
+                    <p>车贷指南</p>
+                    <span>了解贷款流程与所需材料，助您轻松体验福特金融的卓越服务。</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="floor4 w">
+        <div class="control">
+            <p>条款说明</p><img src="./img/mark_5.png" alt="" id="show2">
+        </div>
+        <div class="show2">
+            <p>[1] 欢迎拨打福特金融客户服务热线/消费者投诉热线/网络信息安全投诉、举报电话：800-988-3231（固话拨打）400-888-3231（手机/固话均可） 工作时间：周一至周五 8：30-17：30 （法定节假日除外）</p>
+            <p>[2] 各地推行的金融方案可能会有差异，具体方案以当地经销商实际推行的方案为准。</p>
+            <p>[3] 客户实际首付金额及信贷审核条件以福特金融的审核决定为准。</p>
+        </div>
+    </div>
+    <div class="footer w">
+        <div class="links">
+            <dl>
+                <dt><a href="">车型展示</a></dt>
+                <dd><a href="">轿车</a></dd>
+                <dd><a href="">SUV</a></dd>
+                <dd><a href="">MPV</a></dd>
+                <dd><a href="">性能车</a></dd>
+                <dd><a href="">商务车</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">购车专区</a></dt>
+                <dd><a href="">福特金融</a></dd>
+                <dd><a href="">活动专区</a></dd>
+                <dd><a href="">批售业务</a></dd>
+                <dd><a href="">二手车</a></dd>
+                <dd><a href="">定制车辆</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">客户服务</a></dt>
+                <dd><a href="">长安福特客户服务</a></dd>
+                <dd><a href="">福特中国客户服务</a></dd>
+                <dd><a href="">江铃汽车客户服务</a></dd>
+                <dd><a href="">用车指南</a></dd>
+                <dd><a href="">SYNC支持</a></dd>
+                <dd><a href="">联系我们</a></dd>
+                <dd><a href="">长安福特车主俱乐部</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特科技</a></dt>
+                <dd><a href="">智能科技</a></dd>
+                <dd><a href="">EcoBoost</a></dd>
+                <dd><a href="">SYNC®</a></dd>
+                <dd><a href="">福特派</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特文化</a></dt>
+                <dd><a href="">新闻中心</a></dd>
+                <dd><a href="">诚聘英才</a></dd>
+                <dd><a href="">关于福特</a></dd>
+                <dd><a href="">品牌体验</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="ff w">
+        <ul>
+            <li>©2016福特汽车（中国）有限公司 沪ICP备05031283号</li>
+            <li><a class="  " href="https://www.ford.com.cn/privacy/">隐私权保护声明</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/copyright/">版权保护</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/sitemap/">网站地图</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/contact-us/">联系我们</a></li>
+            <li><a class="  " href="http://corporate.ford.com/homepage.html">福特全球</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/hotline/">24小时客服热线</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

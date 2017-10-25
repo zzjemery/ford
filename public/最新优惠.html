@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>全新优惠</title>
+    <link rel="stylesheet" href="./css/cssreset-min.css">
+    <link rel="stylesheet" href="./css/quanxinyouhui.css">
+</head>
+<script src="./js/jquery-3.2.1.js"></script>
+<script src="./js/slider1.js"></script>
+<script>
+    $(function() {
+        $('.slider').slider();
+        var count = 0;
+        $('.n_left').on('click', function() {
+            count++;
+            if (count % 2 != 0) {
+                $('#mark_2').attr('style', 'transform:rotate(180deg)');
+                $('.show1').slideDown();
+            } else {
+                $('#mark_2').attr('style', 'transform:rotate(0deg)');
+                $('.show1').slideUp();
+            }
+        });
+        $('.banner').hover(function() {
+            $('.banner_left,.banner_right').animate({
+                'width': '50px'
+            }, 1000);
+        }, function() {
+            $('.banner_left,.banner_right').animate({
+                'width': '0px'
+            }, 1000);
+        })
+        $('.banner_left,.banner_right').hover(function() {
+            $('.banner_left,.banner_right').stop()
+        }, function() {
+            $('.banner_left,.banner_right').stop()
+        });
+    })
+</script>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <img src="./img/logo.png" alt="">
+            <ul>
+                <li class="n_s"><a href="javascript:;">预约试驾</a></li>
+                <li class="n_s"><a href="javascript:;">经销商查询及招募</a></li>
+                <li><a href="javascript:;">新闻中心</a></li>
+                <li><a href="javascript:;">福特文化</a></li>
+                <li><a href="javascript:;">福特科技</a></li>
+                <li><a href="javascript:;">车主服务</a></li>
+                <li><a href="javascript:;">购车专区</a></li>
+                <li><a href="javascript:;">车型展示</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="h_nav w">
+        <div class="n_left">
+            <img src="./img/mark_2.png" alt="" id="mark_2">
+            <a href="#">活动专区 | 福特最新优惠活动</a>
+        </div>
+        <div class="n_right">
+            <img src="./img/mark_3.png" alt="">
+            <a href="#">产品手册下载</a>
+            <img src="./img/mark_3.png" alt="">
+            <a href="#">经销商查询</a>
+            <img src="./img/mark_3.png" alt="">
+            <a href="#">预约试驾</a>
+        </div>
+    </div>
+    <div class="slider w">
+        <p class="huodong">最新优惠活动</p>
+        <div class="banner">
+            <p><img src="./img/qxyh_1.jpg" alt=""><s>了解更多</s></p>
+            <p><img src="./img/qxyh_2.jpg" alt=""><s>了解更多</s></p>
+        </div>
+        <span class="banner_left">&lt;</span>
+        <span class="banner_right">&gt;</span>
+    </div>
+    <div class="footer w">
+        <div class="links">
+            <dl>
+                <dt><a href="">车型展示</a></dt>
+                <dd><a href="">轿车</a></dd>
+                <dd><a href="">SUV</a></dd>
+                <dd><a href="">MPV</a></dd>
+                <dd><a href="">性能车</a></dd>
+                <dd><a href="">商务车</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">购车专区</a></dt>
+                <dd><a href="">福特金融</a></dd>
+                <dd><a href="">活动专区</a></dd>
+                <dd><a href="">批售业务</a></dd>
+                <dd><a href="">二手车</a></dd>
+                <dd><a href="">定制车辆</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">客户服务</a></dt>
+                <dd><a href="">长安福特客户服务</a></dd>
+                <dd><a href="">福特中国客户服务</a></dd>
+                <dd><a href="">江铃汽车客户服务</a></dd>
+                <dd><a href="">用车指南</a></dd>
+                <dd><a href="">SYNC支持</a></dd>
+                <dd><a href="">联系我们</a></dd>
+                <dd><a href="">长安福特车主俱乐部</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特科技</a></dt>
+                <dd><a href="">智能科技</a></dd>
+                <dd><a href="">EcoBoost</a></dd>
+                <dd><a href="">SYNC®</a></dd>
+                <dd><a href="">福特派</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特文化</a></dt>
+                <dd><a href="">新闻中心</a></dd>
+                <dd><a href="">诚聘英才</a></dd>
+                <dd><a href="">关于福特</a></dd>
+                <dd><a href="">品牌体验</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="ff w">
+        <ul>
+            <li>©2016福特汽车（中国）有限公司 沪ICP备05031283号</li>
+            <li><a class="  " href="https://www.ford.com.cn/privacy/">隐私权保护声明</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/copyright/">版权保护</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/sitemap/">网站地图</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/contact-us/">联系我们</a></li>
+            <li><a class="  " href="http://corporate.ford.com/homepage.html">福特全球</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/hotline/">24小时客服热线</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>福特撼路者</title>
+    <link rel="stylesheet" href="./css/cssreset-min.css">
+    <link rel="stylesheet" href="./css/fthlz.css">
+</head>
+<script src="./js/jquery-3.2.1.js"></script>
+<script src="./js/superSlider.js"></script>
+<script src="./js/superSlider1.js"></script>
+<script>
+    $(function() {
+        var count = 0;
+        var count1 = 0;
+        $('.n_left').on('click', function() {
+            count++;
+            if (count % 2 != 0) {
+                $('#mark_2').attr('style', 'transform:rotate(180deg)');
+                $('.show1').slideDown();
+            } else {
+                $('#mark_2').attr('style', 'transform:rotate(0deg)');
+                $('.show1').slideUp();
+            }
+        });
+        $('.home-hero').hover(function() {
+            $('.arr1,.arr2').animate({
+                'width': '50px'
+            }, 1000);
+        }, function() {
+            $('.arr1,.arr2').animate({
+                'width': '0px'
+            }, 1000);
+        })
+        $('.arr1,.arr2').hover(function() {
+            $('.arr1,.arr2').stop()
+        }, function() {
+            $('.arr1,.arr2').stop()
+        });
+
+        $('.home-hero_1').hover(function() {
+            $('.arr1_1,.arr2_1').animate({
+                'width': '50px'
+            }, 1000);
+        }, function() {
+            $('.arr1_1,.arr2_1').animate({
+                'width': '0px'
+            }, 1000);
+        })
+        $('.arr1_1,.arr2_1').hover(function() {
+            $('.arr1_1,.arr2_1').stop()
+        }, function() {
+            $('.arr1_,.arr2_1').stop()
+        });
+
+        $('#p1').hover(function() {
+            $('#p1').attr('src', './img/fttxz_5_1.png');
+        }, function() {
+            $('#p1').attr('src', './img/fttxz_5.jpg');
+        });
+        $('#p2').hover(function() {
+            $('#p2').attr('src', './img/fttxz_6_1.jpg');
+        }, function() {
+            $('#p2').attr('src', './img/fttxz_6.jpg');
+        });
+        $('#p3').hover(function() {
+            $('#p3').attr('src', './img/fttxz_7_1.png');
+        }, function() {
+            $('#p3').attr('src', './img/fttxz_7.jpg');
+        });
+        $('.control').on('click', function() {
+            count1++;
+            if (count1 % 2 != 0) {
+                $('#show2').attr('style', 'transform:rotate(180deg)');
+                $('.show2').slideUp();
+            } else {
+                $('#show2').attr('style', 'transform:rotate(0deg)');
+                $('.show2').slideDown();
+            }
+        });
+    })
+</script>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <img src="./img/logo.png" alt="">
+            <ul>
+                <li class="n_s"><a href="javascript:;">预约试驾</a></li>
+                <li class="n_s"><a href="javascript:;">经销商查询及招募</a></li>
+                <li><a href="javascript:;">新闻中心</a></li>
+                <li><a href="javascript:;">福特文化</a></li>
+                <li><a href="javascript:;">福特科技</a></li>
+                <li><a href="javascript:;">车主服务</a></li>
+                <li><a href="javascript:;">购车专区</a></li>
+                <li><a href="javascript:;">车型展示</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="h_nav w">
+        <div class="n_left">
+            <img src="./img/mark_2.png" alt="" id="mark_2">
+            <a href="#">探索 新福特撼路者</a>
+        </div>
+        <div class="n_right">
+            <img src="./img/mark_3.png" alt="">
+            <a href="#">产品手册下载</a>
+            <img src="./img/mark_3.png" alt="">
+            <a href="#">经销商查询</a>
+            <img src="./img/mark_3.png" alt="">
+            <a href="#">预约试驾</a>
+        </div>
+    </div>
+    <div class="show1">
+        <ul style="max-height: 591px;">
+            <li><a href="https://www.ford.com.cn/suvs/everest/" class="  ">车型首页</a></li>
+            <li><a href="https://www.ford.com.cn/suvs/everest/gallery/" class="  ">精彩展示</a></li>
+            <li><a href="https://www.ford.com.cn/suvs/everest/features/performance/" class="  ">巅峰驾驭</a></li>
+            <li><a href="https://www.ford.com.cn/suvs/everest/features/smart/" class="  ">人性科技</a></li>
+            <li><a href="https://www.ford.com.cn/suvs/everest/features/capability/" class="  ">智动性能</a></li>
+            <li><a href="https://www.ford.com.cn/suvs/everest/features/quality/" class="  ">智享舒适</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/suvs/everest/compare-models/">车型比较</a></li>
+            <li><a href="https://www.ford.com.cn/suvs/everest/heartshaking/" class="  ">撼心之旅</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/fafc/payment-calculator/">福特金融</a></li>
+        </ul>
+    </div>
+    <div class="slider w">
+        <div class="home-hero">
+            <div id="home-hero-slider" style="left:0px;">
+                <a href="#">
+                    <img src="./img/fthlz_1.jpg" width="1349" />
+                    <h2>撼心老友季 特惠三重礼</h2>
+                    <h3>现购车即享最高15000元置换补贴及2年0利率优惠</h3>
+                    <p>机不可失 即刻预约</p>
+                </a>
+                <a href="#">
+                    <img src="./img/fthlz_2.jpg" width="1349" />
+                    <h2>撼心之旅 直通阿拉善英雄会</h2>
+                    <p>
+                        了解活动详情
+                    </p>
+                </a>
+                <a href="#">
+                    <img src="./img/fthlz_3.jpg" width="1349" />
+                    <h2>全路况极智SUV，同级最佳涉水深度</h2>
+                    <p>车型精彩展示</p>
+                </a>
+            </div>
+            <div class="but1">
+                <span indexs="0" class="on"></span>
+                <span indexs="1"></span>
+                <span indexs="2"></span>
+            </div>
+            <span class="arr1" id="pre">&lt;</span>
+            <span class="arr2" id="next">&gt;</span>
+        </div>
+    </div>
+    <div class="floor1 w">
+        <ul>
+            <li>
+                <p>厂家建议零售价</p>
+                <span>￥265800元起 </span>
+            </li>
+            <li>
+            </li>
+            <li>
+                <p>动力系统 EcoBoost®</p>
+                <span>3.5L V6 /</span><br/>
+                <span>> 2.3L I4</span>
+            </li>
+            <li>
+                <p>座位数</p>
+                <span>7</span>
+            </li>
+        </ul>
+    </div>
+    <div class="floor2 w">
+        <div class="home-hero_1">
+            <div id="home-hero-slider_1" style="left:0px;">
+                <a href="#">
+                    <img src="./img/fthlz_4.jpg" width="1349" />
+                    <div class="text">
+                        <h2>智动性能</h2>
+                        <h3>新撼路者，强悍而稳重，专为征服艰难的地形和意想不到的障碍而设计，带您探索道路尽头的世界。</h3>
+                        <p>探索智动性能</p>
+                    </div>
+
+                </a>
+                <a href="#">
+                    <img src="./img/fthlz_5.jpg" width="1349" />
+                    <div class="text">
+                        <h2>人性科技</h2>
+                        <h3>无需动手即可快速拨打电话、找到最佳停车地点，并令您在倒车时更加自信。 无论您需要什么，撼路者都能以超乎寻常的智能科技提供帮助。</h3>
+                        <p>
+                            探索人性科技
+                        </p>
+                    </div>
+
+                </a>
+                <a href="#">
+
+                    <img src="./img/fthlz_6.jpg" width="1349" />
+                    <div class="text">
+                        <h2>智享舒适</h2>
+                        <h3>舒适的真皮座椅，主动降噪技术和全景天窗等非凡细节，为您的探索旅程带来无与伦比的乐趣。</h3>
+                        <p>探索智享舒适</p>
+                    </div>
+                </a>
+            </div>
+            <div class="but1_1">
+                <span indexs="0" class="on"></span>
+                <span indexs="1"></span>
+                <span indexs="2"></span>
+            </div>
+            <span class="arr1_1" id="pre_1">&lt;</span>
+            <span class="arr2_1" id="next_1">&gt;</span>
+        </div>
+    </div>
+    <div class="floor3 w">
+        <div class="text">
+            <p>唤醒你心中的探险者</p>
+            <span>预约试驾</span>
+            <span>定制车辆</span>
+            <span>产品手册下载</span>
+        </div>
+
+    </div>
+    <div class="floor4 w">
+        <div class="control">
+            <p>条款说明</p><img src="./img/mark_5.png" alt="" id="show2">
+        </div>
+        <div class="show2">
+            <p>[1] 因拍摄时光线或显示器分辨率不同等因素影响，难免存在一定色差。车体外观颜色以实车为准，敬请谅解。</p>
+            <p>[2] 以上价格与配置仅供参考！欲了解实际交易价格和更多情况，请与当地经销商联系!</p>
+        </div>
+    </div>
+    <div class="footer w">
+        <div class="links">
+            <dl>
+                <dt><a href="">车型展示</a></dt>
+                <dd><a href="">轿车</a></dd>
+                <dd><a href="">SUV</a></dd>
+                <dd><a href="">MPV</a></dd>
+                <dd><a href="">性能车</a></dd>
+                <dd><a href="">商务车</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">购车专区</a></dt>
+                <dd><a href="">福特金融</a></dd>
+                <dd><a href="">活动专区</a></dd>
+                <dd><a href="">批售业务</a></dd>
+                <dd><a href="">二手车</a></dd>
+                <dd><a href="">定制车辆</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">客户服务</a></dt>
+                <dd><a href="">长安福特客户服务</a></dd>
+                <dd><a href="">福特中国客户服务</a></dd>
+                <dd><a href="">江铃汽车客户服务</a></dd>
+                <dd><a href="">用车指南</a></dd>
+                <dd><a href="">SYNC支持</a></dd>
+                <dd><a href="">联系我们</a></dd>
+                <dd><a href="">长安福特车主俱乐部</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特科技</a></dt>
+                <dd><a href="">智能科技</a></dd>
+                <dd><a href="">EcoBoost</a></dd>
+                <dd><a href="">SYNC®</a></dd>
+                <dd><a href="">福特派</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特文化</a></dt>
+                <dd><a href="">新闻中心</a></dd>
+                <dd><a href="">诚聘英才</a></dd>
+                <dd><a href="">关于福特</a></dd>
+                <dd><a href="">品牌体验</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="ff w">
+        <ul>
+            <li>©2016福特汽车（中国）有限公司 沪ICP备05031283号</li>
+            <li><a class="  " href="https://www.ford.com.cn/privacy/">隐私权保护声明</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/copyright/">版权保护</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/sitemap/">网站地图</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/contact-us/">联系我们</a></li>
+            <li><a class="  " href="http://corporate.ford.com/homepage.html">福特全球</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/hotline/">24小时客服热线</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
