@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/cssreset-min.css">
+</head>
+<script src="./js/jquery-3.2.1.js"></script>
+<script src="js/slider.js"></script>
+<script src="./js/tabs.js"></script>
+<script>
+    $(function() {
+        $('#tabs').tabs();
+        var count1 = 0;
+        var count2 = 0;
+        var count3 = 0;
+        var count4 = 0;
+        var count5 = 0;
+        var count6 = 0;
+        $('.Li1').on('click', function() {
+            count1++;
+            if (count1 % 2 == 0) {
+                $('.show').slideUp();
+            } else {
+                $('.show').slideDown();
+            }
+        });
+        $('.Li2').on('click', function() {
+            count2++;
+            if (count2 % 2 == 0) {
+                $('.show').slideUp();
+            } else {
+                $('.show').slideDown();
+            }
+        });
+        $('.Li3').on('click', function() {
+            count3++;
+            if (count3 % 2 == 0) {
+                $('.show').slideUp();
+            } else {
+                $('.show').slideDown();
+            }
+        });
+        $('.Li4').on('click', function() {
+            count4++;
+            if (count4 % 2 == 0) {
+                $('.show').slideUp();
+            } else {
+                $('.show').slideDown();
+            }
+        });
+        $('.Li5').on('click', function() {
+            count5++;
+            if (count5 % 2 == 0) {
+                $('.show').slideUp();
+            } else {
+                $('.show').slideDown();
+            }
+        });
+        $('.Li6').on('click', function() {
+            count6++;
+            if (count6 % 2 == 0) {
+                $('.show').slideUp();
+            } else {
+                $('.show').slideDown();
+            }
+        });
+    })
+</script>
+<script>
+    $(function() {
+        $('.slider').slider();
+        $('.banner').hover(function() {
+            $('.banner_left,.banner_right').animate({
+                'width': '50px'
+            }, 1000);
+        }, function() {
+            $('.banner_left,.banner_right').animate({
+                'width': '0px'
+            }, 1000);
+        })
+        $('.banner_left,.banner_right').hover(function() {
+            $('.banner_left,.banner_right').stop()
+        }, function() {
+            $('.banner_left,.banner_right').stop()
+        });
+    })
+</script>
+
+<body>
+    <div class="header">
+        <div class="nav" id="tabs">
+            <img src="./img/logo.png" alt="">
+            <ul class="showSuper">
+                <li class="Li1"><a href="javascript:;">车型展示</a></li>
+                <li class="Li2"><a href="javascript:;">购车专区</a></li>
+                <li class="Li3"><a href="javascript:;">车主服务</a></li>
+                <li class="Li4"><a href="javascript:;">福特科技</a></li>
+                <li class="Li5"><a href="javascript:;">福特文化</a></li>
+                <li class="Li6"><a href="javascript:;">新闻中心</a></li>
+                <li class="n_s"><a href="经销商.html">经销商查询及招募</a></li>
+                <li class="n_s"><a href="福特金融.html">福特金融</a></li>
+            </ul>
+            <div class="Div1 tabs">
+                <div class="text1">
+                    <img src="./img/cxzs.png" alt="">
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/newsroom/" tabindex="14">观看全车系</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/mediacontact/pacontact/" tabindex="14">下载产品手册</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="Div2 tabs">
+                <div class="text2">
+                    <h3>福特金融</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/financial-programs/" tabindex="6">金融方案</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/financial-options/" tabindex="6">金融产品</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/shoppers-guide/" tabindex="6">车贷指南</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/payment-calculator/" tabindex="6">车贷计算器</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/why-ford-credit/" tabindex="6">公司介绍</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/faq/" tabindex="6">常见问题</a></p>
+                    </div>
+                </div>
+                <div class="text2">
+                    <h3>活动专区</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/financial-programs/" tabindex="6">长安福特活动专区</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/financial-options/" tabindex="6">福特中国活动专区</a></p>
+                    </div>
+                </div>
+                <div class="text2">
+                    <h3>大金融客户</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/financial-programs/" tabindex="6">大金融客户</a></p>
+                    </div>
+                </div>
+                <div class="text2">
+                    <h3>二手车</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/financial-programs/" tabindex="6">置换业务</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/financial-options/" tabindex="6">认证业务</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/shoppers-guide/" tabindex="6">二手车专题网站</a></p>
+                    </div>
+                </div>
+                <div class="text2">
+                    <h3>定制车辆</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/financial-programs/" tabindex="6">定制车辆</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/financial-options/" tabindex="6">预约试驾</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/shoppers-guide/" tabindex="6">经销商查询及招募</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/fafc/shoppers-guide/" tabindex="6">下载产品手册</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="Div3 tabs">
+                <div class="text3 long">
+                    <h3>长安福特客户服务</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/service/caf/" tabindex="8">长安福特总览</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/caf/caf-qualitycare/" tabindex="8">Quality Care</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/caf/caf-warranty/" tabindex="8">保修服务</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/caf/Ford_Parts/" tabindex="8">福特零件</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/caf/caf-accessory/" tabindex="8">原厂附件</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/caf/caf-extension/" tabindex="8">延长质保</a></p>
+                    </div>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/service/caf/caf-maintain/" tabindex="8">保养套餐</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/caf/caf-roadassist/" tabindex="8">道路紧急救援</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/caf/caf-crcc/" tabindex="8">客户关系中心</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/caf/caf-overseasstudentpurchase/" tabindex="8">留学人员购车</a></p>
+                        <p><a class="  " href="https://fordclub.changanford.cn/media/mapFileDownload.jspx" tabindex="8">地图升级下载</a></p>
+                    </div>
+                </div>
+                <div class="text3">
+                    <h3>福特中国客户服务</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/service/fco/" tabindex="8">福特中国总览</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/fco/fco-warranty/" tabindex="8">保修服务</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/fco/fco-roadassist/" tabindex="8">道路紧急救援</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/fco/fco-crcc/" tabindex="8">客户关系中心</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/fco/fco-extension/" tabindex="8">延长质保</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/fco/fco-oil-package/" tabindex="8">定期换油套餐</a></p>
+                    </div>
+                </div>
+                <div class="text3 long">
+                    <h3>江铃汽车客户服务</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/service/jmc/" tabindex="8">江铃汽车总览</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/jmc/jmc-jmccares/" tabindex="8">JMC Cares</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/jmc/jmc-warranty/" tabindex="8">保修服务</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/jmc/jmc-crcc/" tabindex="8">客户关系中心</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/jmc/jmc-tech-support/" tabindex="8">技术保障</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/jmc/jmc-brandactivity/" tabindex="8">服务品牌活动</a></p>
+                    </div>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/service/jmc/jmc-majorcustomerservice/" tabindex="8">大客户服务</a></p>
+                    </div>
+                </div>
+                <div class="text3">
+                    <h3>用车指南</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/service/maintenance/car-maintenance/" tabindex="8">爱车保养</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/maintenance/safety/" tabindex="8">行车安全</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/maintenance/knowledge/" tabindex="8">行车常识</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/maintenance/faq/" tabindex="8">用车小窍门</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/maintenance/childseatsafety/" tabindex="8">儿童安全座椅</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/service/maintenance/video/" tabindex="8">用车视频指南</a></p>
+                    </div>
+                </div>
+                <div class="text3">
+                    <h3>SYNC®支持</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/sync3/" tabindex="8">SYNC<sup>®</sup> 3</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/sync2/" tabindex="8">SYNC<sup>®</sup> with My Ford Touch<sup>®</sup></a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/sync1/" tabindex="8">SYNC<sup>®</sup></a></p>
+                        <p><a class="link-overlay base-url popup-link-initialized" _link_action="link-overlay" href="/#overlay/content/ford/cn/zh_cn/site-wide-content/overlays/form-overlays/login.html" tabindex="8">SYNC<sup>®</sup> 车主服务中心</a></p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <div class="text3" style="height:150px;">
+                    <h3>联系我们</h3>
+                    <div class="accordion-content">
+                        <div class="category-links-column">
+                            <p><a class="  " href="https://www.ford.com.cn/locate-a-dealer/" tabindex="8">经销商查询及招募</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Div4 tabs">
+                <div class="text4">
+                    <h3>福特科技</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/engineering/" tabindex="10">智能科技</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/engineering/ecoboost/" tabindex="10">EcoBoost</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/engineering/sync/" tabindex="10">SYNC<sup>®</sup></a></p>
+                        <p><a class="  " href="https://www.fordpass.com.cn/" tabindex="10">福特派</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="Div5 tabs">
+                <div class="text5">
+                    <h3>诚聘英才</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/careers/" tabindex="12">诚聘英才</a></p>
+                    </div>
+                </div>
+                <div class="text5">
+                    <h3>关于福特</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/about-ford/" tabindex="12">关于福特</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/history/" tabindex="12">百年福特</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/brand-culture/" tabindex="12">品牌文化</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/sustainability/" tabindex="12">可持续发展</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/mep/" tabindex="12">福特环保信息</a></p>
+                    </div>
+                </div>
+                <div class="text5">
+                    <h3>品牌体验</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/forms/racing/" tabindex="12">长安福特赛车运动</a></p>
+                    </div>
+                </div>
+                <div class="text5">
+                    <h3>福特公益</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/campaign/risingstars/" tabindex="12">中超未来之星</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="Div6 tabs" style="height:200px;">
+                <div class="text6" style="height:200px;">
+                    <h3>新闻中心</h3>
+                    <div class="category-links-column">
+                        <p><a class="  " href="https://www.ford.com.cn/newsroom/" tabindex="14">新闻中心</a></p>
+                        <p><a class="  " href="https://www.ford.com.cn/mediacontact/pacontact/" tabindex="14">公共事务联系人</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="banner">
+            <p><img src="./img/index_banner1.jpg" alt=""><i>探险趁当夏</i><b>现购车即享最高15000元置换补贴及2年0利率优惠</b><a href="芯动力玩咖.html"><s>了解更多</s></a></p>
+            <p><img src="./img/index_banner2.jpg" alt=""><i></i><b>撼心之旅 直通阿拉善英雄会</b><a href="福特探险者.html"><s>了解更多</s></a></p>
+            <p><img src="./img/index_banner3.jpg" alt=""><i>福特派车主应用</i><b>智能随行 自在随心</b><a href="福特撼路者.html"><s>即刻体验</s></a></p>
+            <p><img src="./img/index_banner4.jpg" alt=""><i>EcoBoost 芯动力玩咖竞选</i><b>炫酷开启</b><s>立即参与</s></p>
+        </div>
+        <span class="banner_left">&lt;</span>
+        <span class="banner_right">&gt;</span>
+    </div>
+    <div class="container w">
+        <a href=""><img src="./img/car_photo1.jpeg" alt="" width="1349"></a>
+        <div class="text">
+            <h2>总有一款福特，契合您的生活</h2>
+            <p>鉴赏全系车型，发现您的至爱</p>
+            <a href="全系车型.html"><span>全系车型</span></a>
+        </div>
+        <div class="show1">
+            <p>特别优惠，强劲来袭</p>
+            <a href="最新优惠.html"><span>查看最新优惠</span></a>
+        </div>
+        <div class="show2">
+            <img src="./img/mark_1.png" alt="">
+            <p>搜索经销商</p>
+            <span>*位置不能为空</span><br/>
+            <select name="" id="">
+                <option value="选择一个省市*">选择一个省市*</option>
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+                <option value="广东">广东</option>
+                <option value="江西">江西</option>
+                <option value="浙江">浙江</option>
+                <option value="福建">福建</option>
+                <option value="广西">广西</option>
+                <option value="湖南">湖南</option>
+                <option value="湖北">湖北</option>
+                <option value="河南">河南</option>
+                <option value="河北">河北</option>
+            </select>
+            <select name="" id="" disabled="disabled" style="color:#C1C1C1;">
+                <option value="选择一个地区*">选择一个地区*</option>
+            </select>
+            <span class="search">搜寻</span>
+        </div>
+    </div>
+    <div class="car w">
+        <div class="car_text">
+            <p>福特最新精彩呈现</p>
+        </div>
+        <ul>
+            <li>
+                <a href=""><img src="./img/car_1.jpg" alt=""><span>探索全新福克斯</span></a>
+            </li>
+            <li class="big">
+                <a href=""><img src="./img/car_2.jpg" alt="" class="super"><span class="super1">Mustang 拇指漂移 创造你的专属漂移视频</span></a>
+            </li>
+            <li>
+                <a href=""><img src="./img/car_3.jpg" alt=""><span>福特金牛座 内外不凡 尽揽全局</span></a>
+            </li>
+            <li>
+                <a href=""><img src="./img/car_4.jpg" alt=""><span>福特新全顺超越从未被超越</span></a>
+            </li>
+            <li>
+                <a href=""><img src="./img/car_5.jpg" alt=""><span>唤醒你心中的探险者</span></a>
+            </li>
+            <li>
+                <a href=""><img src="./img/car_6.jpg" alt=""><span>撼心试驾 谁与争锋</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="down w">
+        <div class="down_text">
+            <h1>福特派</h1>
+            <h2>智能随行 自在随心</h2>
+            <p>通过一站式出行应用工具福特派，您将更便捷地驾驭福特。轻松实现爱车售后服务，获得车主道路救援等各种尽善尽美的解决方案，让每一次出行倍感轻松愉悦。</p>
+            <a href="#">下载福特派</a>
+        </div>
+    </div>
+    <div class="footer w">
+        <div class="links">
+            <dl>
+                <dt><a href="">车型展示</a></dt>
+                <dd><a href="">轿车</a></dd>
+                <dd><a href="">SUV</a></dd>
+                <dd><a href="">MPV</a></dd>
+                <dd><a href="">性能车</a></dd>
+                <dd><a href="">商务车</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">购车专区</a></dt>
+                <dd><a href="">福特金融</a></dd>
+                <dd><a href="">活动专区</a></dd>
+                <dd><a href="">批售业务</a></dd>
+                <dd><a href="">二手车</a></dd>
+                <dd><a href="">定制车辆</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">客户服务</a></dt>
+                <dd><a href="">长安福特客户服务</a></dd>
+                <dd><a href="">福特中国客户服务</a></dd>
+                <dd><a href="">江铃汽车客户服务</a></dd>
+                <dd><a href="">用车指南</a></dd>
+                <dd><a href="">SYNC支持</a></dd>
+                <dd><a href="">联系我们</a></dd>
+                <dd><a href="">长安福特车主俱乐部</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特科技</a></dt>
+                <dd><a href="">智能科技</a></dd>
+                <dd><a href="">EcoBoost</a></dd>
+                <dd><a href="">SYNC®</a></dd>
+                <dd><a href="">福特派</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="">福特文化</a></dt>
+                <dd><a href="">新闻中心</a></dd>
+                <dd><a href="">诚聘英才</a></dd>
+                <dd><a href="">关于福特</a></dd>
+                <dd><a href="">品牌体验</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="ff w">
+        <ul>
+            <li>©2016福特汽车（中国）有限公司 沪ICP备05031283号</li>
+            <li><a class="  " href="https://www.ford.com.cn/privacy/">隐私权保护声明</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/copyright/">版权保护</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/sitemap/">网站地图</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/contact-us/">联系我们</a></li>
+            <li><a class="  " href="http://corporate.ford.com/homepage.html">福特全球</a></li>
+            <li><a class="  " href="https://www.ford.com.cn/hotline/">24小时客服热线</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
